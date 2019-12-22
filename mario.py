@@ -7,5 +7,3 @@ while True:
             print(" " * (x-i) + "#"*i + "  " + "#"*i)
             i+=1
         break
-    else:
-        break
