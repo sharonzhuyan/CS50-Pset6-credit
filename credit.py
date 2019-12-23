@@ -6,12 +6,13 @@ while True:
     # apply luhn's algrithm
     if x.isdigit() == True:
         i = len(x) - 2
+        j = len(x) - 1
         sum1 = []
         sum2 = 0
         while i >= 0:
             sum1.append(int(x[i]) * 2)
-            if i+1 <= len(x) - 1:
-                sum2 = sum2 + int(x[i+1])
+            if j >= 0:
+                sum2 = sum2 + int(x[j])
             i -= 2
         n = 0
         sum = 0
