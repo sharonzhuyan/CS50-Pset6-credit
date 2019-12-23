@@ -11,9 +11,9 @@ while True:
         sum2 = 0
         while i >= 0:
             sum1.append(int(x[i]) * 2)
-            if j >= 0:
-                sum2 = sum2 + int(x[j])
             i -= 2
+        while j >= 0:
+            sum2 = sum2 + int(x[j])
             j -= 2
         n = 0
         sum = 0
