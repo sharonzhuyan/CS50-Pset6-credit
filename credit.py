@@ -24,9 +24,6 @@ while True:
             n += 1
         sum = sum + sum2
         # determine whether it's a valid card number
-        print(sum1)
-        print(sum)
-        print(i)
         if sum % 10 == 0:
             if len(x) == 15:
                 print('AMEX')
