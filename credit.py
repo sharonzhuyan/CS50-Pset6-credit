@@ -5,15 +5,14 @@ while True:
     x = get_string("Number: ")
     # apply luhn's algrithm
     if x.isdigit() == True:
-        i = 0
-        j = 0
+        i = len(x) - 2
         sum1 = []
         sum2 = 0
-        while i <= len(x) - 1:
+        while i >= 0:
             sum1.append(int(x[i]) * 2)
             if i+1 <= len(x) - 1:
                 sum2 = sum2 + int(x[i+1])
-            i += 2
+            i -= 2
         n = 0
         sum = 0
         while n < len(sum1):
