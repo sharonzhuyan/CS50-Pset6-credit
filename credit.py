@@ -14,6 +14,7 @@ while True:
             if j >= 0:
                 sum2 = sum2 + int(x[j])
             i -= 2
+            j -= 2
         n = 0
         sum = 0
         while n < len(sum1):
