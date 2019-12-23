@@ -16,7 +16,7 @@ while True:
             i += 2
         n = 0
         sum = 0
-        while n < len(sum1) - 1:
+        while n < len(sum1):
             if len(str(sum1[n])) > 1:
                 sum = sum + int(str(sum1[n])[0]) + int(str(sum1[n])[1])
             else:
@@ -24,6 +24,9 @@ while True:
             n += 1
         sum = sum + sum2
         # determine whether it's a valid card number
+        print(sum1)
+        print(sum)
+        print(i)
         if sum % 10 == 0:
             if len(x) == 15:
                 print('AMEX')
