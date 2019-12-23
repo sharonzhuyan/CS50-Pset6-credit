@@ -9,9 +9,13 @@ while True:
         j = len(x) - 1
         sum1 = []
         sum2 = 0
+
+        # mutiply every other digit by 2
         while i >= 0:
             sum1.append(int(x[i]) * 2)
             i -= 2
+
+        # sum up other digits
         while j >= 0:
             sum2 = sum2 + int(x[j])
             j -= 2
@@ -35,6 +39,3 @@ while True:
         else:
             print('INVALID')
         break
-
-
-
